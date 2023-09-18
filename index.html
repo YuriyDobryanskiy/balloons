@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FS Project #2 - Balloons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./css/style-fonts.css" rel="stylesheet" />
+  <link href="./css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="navigation">
+      <input type="checkbox" id="navigation">
+      <label for="navigation">
+        <span class="navigation__burger"></span>
+      </label>
+      <div class="navigation__box"></div>
+      <nav>
+        <ul>
+          <a href="#">
+            <li>Про нас</li>
+          </a>
+          <a href="#">
+            <li>Знижки</li>
+          </a>
+          <a href="#">
+            <li>Кращі тури</li>
+          </a>
+          <a href="#">
+            <li>Калькулятор цін</li>
+          </a>
+          <a href="#">
+            <li>Зв'язатись з нами</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+    <header class="header">
+      <a href="#"><img class="header__logo" src="icons/Icon-logo.svg" alt="logo" /></a>
+
+      <div class="header__title-box">
+        <h1>Тури на повітряній кулі</h1>
+        <h2>незабутні пригоди чекають на вас</h2>
+        <a href="#tours" class="primary-btn">Наш каталог</a>
+      </div>
+    </header>
+    <main>
+      <section class="fealings container">
+        <h3 class="mb-80">Неймовірне відчуття свободи</h3>
+        <div class="fealings__box">
+          <div class="fealings__box__text">
+            <div class="text-block">
+              <h4>ДОЗВОЛЬТЕ СоБі ПРИГОДИ</h4>
+              <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням і
+                модернізації відповідних умов активизации. Таким чином, початок повсякденної роботи з формування
+                позиції.</p>
+            </div>
+            <div class="text-block mb-8">
+              <h4>ВВЕРХ НА 6000 МЕТРІВ НАД РІВНЕМ МОРЯ</h4>
+              <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадження та
+                модернізації відповідних умов активізації. Таким чином, початок повсякденної роботи з формування
+                позиції.</p>
+            </div>
+            <div>
+              <a href="#" class="secondary-button">Дізнатись більше<svg class="icon" width="18" height="8">
+                  <use href="icons/icons.svg#arr-right-1"></use>
+                </svg></a>
+            </div>
+          </div>
+          <div class="fealings__box__images">
+            <img src="images/balloons-1.jpg" alt="balloons" srcset="">
+            <img src="images/balloons-2.jpg" alt="balloons" srcset="">
+            <img src="images/balloons-3.jpg" alt="balloons" srcset="">
+          </div>
+        </div>
+      </section>
+      <section class="fealings-cards">
+        <div class="container">
+          <div class="fealings-cards__card">
+            <i class="icon-card1"></i>
+            <h4>Пригоди</h4>
+            <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням</p>
+          </div>
+          <div class="fealings-cards__card">
+            <i class="icon-card2"></i>
+            <h4>Пригоди</h4>
+            <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням</p>
+          </div>
+          <div class="fealings-cards__card">
+            <i class="icon-card3"></i>
+            <h4>Пригоди</h4>
+            <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням</p>
+          </div>
+          <div class="fealings-cards__card">
+            <i class="icon-card4"></i>
+            <h4>Пригоди</h4>
+            <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадженням</p>
+          </div>
+        </div>
+      </section>
+      <section class="tours container" id="tours">
+        <h3 class="mb-80">Нейпопулярніші тури</h3>
+        <div class="tours__cards">
+          <div class="tours__cards__card">
+            <div class="tours__cards__card__side tours__cards__card__side_front">
+              <div class="image">
+                <img src="./images/balloons-1.jpg" alt="Групові тури" srcset="">
+              </div>
+              <h5 class="title">
+                <span>Групові</span><br>
+                <span>тури</span>
+              </h5>
+              <ul>
+                <li>Групи від 6 осіб</li>
+                <li>Тривалість 2 год</li>
+                <li>У групі 1 гід</li>
+                <li>Дальність польоту 6км</li>
+                <li>Безкоштовні сувеніри</li>
+              </ul>
+            </div>
+            <div class="tours__cards__card__side tours__cards__card__side_back">
+              <p class="text">Повна вартість:</p>
+              <p class="price">5990₴</p>
+              <a href="#" class="primary-btn">Забронювати</a>
+            </div>
+          </div>
+          <div class="tours__cards__card">
+            <div class="tours__cards__card__side tours__cards__card__side_front">
+              <div class="image">
+                <img src="./images/balloons-2.jpg" alt="Приватні тури" srcset="">
+              </div>
+              <h5 class="title">
+                <span>Приватні</span><br>
+                <span>тури</span>
+              </h5>
+              <ul>
+                <li>Групи від 6 осіб</li>
+                <li>Тривалість 2 год</li>
+                <li>У групі 1 гід</li>
+                <li>Дальність польоту 6км</li>
+                <li>Безкоштовні сувеніри</li>
+              </ul>
+            </div>
+            <div class="tours__cards__card__side tours__cards__card__side_back">
+              <p class="text">Повна вартість:</p>
+              <p class="price">7990₴</p>
+              <a href="#" class="primary-btn">Забронювати</a>
+            </div>
+          </div>
+          <div class="tours__cards__card">
+            <div class="tours__cards__card__side tours__cards__card__side_front">
+              <div class="image">
+                <img src="./images/balloons-3.jpg" alt="Оглядові площадки" srcset="">
+              </div>
+              <h5 class="title">
+                <span>Оглядові</span><br>
+                <span>площадки</span>
+              </h5>
+              <ul>
+                <li>Групи від 6 осіб</li>
+                <li>Тривалість 2 год</li>
+                <li>У групі 1 гід</li>
+                <li>Дальність польоту 6км</li>
+                <li>Безкоштовні сувеніри</li>
+              </ul>
+            </div>
+            <div class="tours__cards__card__side tours__cards__card__side_back">
+              <p class="text">Повна вартість:</p>
+              <p class="price">1990₴</p>
+              <a href="#" class="primary-btn">Забронювати</a>
+            </div>
+          </div>
+        </div>
+        <a href="#reserve" class="primary-btn">Забронювати</a>
+      </section>
+      <section class="response container container_2">
+        <div class="response__bg__wrapper"></div>
+        <video class="response__bg" autoplay muted loop>
+          <source src="./video/hot-air-balloon.mp4">
+          <source src="./video/hot-air-balloons.webm">
+        </video>
+
+        <h3 class="mb-80">Відгуки наших клієнтів</h3>
+        <div class="response__box">
+          <div class="response__box_1">
+            <figure class="response__box__image">
+              <img src="./images/person-1.jpg" width="167" alt="Person-1" srcset="">
+              <figcaption>First person</figcaption>
+            </figure>
+            <div class="response__box__text">
+              <h4>Я ОТРИМАВ МАСУ ВРАЖЕНЬ</h4>
+              <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадження та
+                модернізації
+                відповідних умов активізації. Таким чином, початок повсякденної роботи з формування позиції тягне.</p>
+            </div>
+          </div>
+          <div class="response__box_2">
+            <figure class="response__box__image">
+              <img src="./images/person-2.jpg" width="167" alt="Person-2" srcset="">
+              <figcaption>Second person</figcaption>
+            </figure>
+            <div class="response__box__text">
+              <h4>ЦЕ БУЛО цікаво І НЕЗАБУТНьО</h4>
+              <p>Завдання організації, особливо ж розвиток різних форм діяльності тягне у себе процес впровадження та
+                модернізації
+                відповідних умов активізації. Таким чином, початок повсякденної роботи з формування позиції тягне.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#reserve" class="primary-btn">Забронювати</a>
+      </section>
+      <section class="reserve container" id="reserve">
+        <div class="reserve__box">
+          <div class="reserve__form">
+            <h3 class="mb-30">Забронювати тур</h3>
+            <form action="#" class="form">
+              <div class="form__input-group">
+                <input type="text" id="name" name="name" placeholder="Ім'я Прізвище" required>
+                <label for="name">Ім'я Прізвище</label>
+              </div>
+              <div class="form__input-group">
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <label for="email">E-mail</label>
+              </div>
+
+              <div class="form__input-group_2">
+                <div>
+                  <input type="radio" id="type1" name="type" value="group" required>
+                  <label for="type1"><span class="button-radio"></span>
+                    Груповий тур</label>
+                </div>
+                <div>
+                  <input type="radio" id="type2" name="type" value="individual" required>
+                  <label for="type2"><label for="type2"><span class="button-radio"></span> Індивідуальний тур</label>
+                </div>
+              </div>
+              <button type="submit" class="primary-btn primary-btn_2">Забронювати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer container">
+      <a href="#"><img class="footer__logo" src="icons/Icon-logo.svg" alt="logo" width="120" /></a>
+      <nav>
+        <ul>
+          <a href="#">
+            <li>Про нас</li>
+          </a>
+          <a href="#">
+            <li>Знижки</li>
+          </a>
+          <a href="#">
+            <li>Кращі тури</li>
+          </a>
+          <a href="#">
+            <li>Калькулятор цін</li>
+          </a>
+          <a href="#">
+            <li>Зв'язатись з нами</li>
+          </a>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+
+
+
+  <!-- Web page script -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
