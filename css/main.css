@@ -187,32 +187,32 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   html {
     font-size: 56.25%;
   }
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   html {
     font-size: 50%;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 45%;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 30%;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   html {
     font-size: 30%;
   }
 }
-@media (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
   html {
     font-size: 75%;
   }
@@ -226,6 +226,7 @@ body {
   letter-spacing: 0.2rem;
   padding: 5rem;
   background-color: #FFF;
+  min-width: 40rem;
 }
 
 .wrapper {
@@ -238,7 +239,7 @@ body {
   max-width: 134rem;
   margin: auto;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .container {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -248,7 +249,7 @@ body {
   padding-left: 14rem;
   padding-right: 14rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .container_2 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -275,6 +276,16 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 98%, 0 80%);
   padding: 5rem;
 }
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 670px), (min-resolution: 192dpi) and (min-width: 670px) {
+  .header {
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../images/Photo-3x.jpg) center center/cover no-repeat;
+  }
+}
+@media (min-width: 900px) and (-webkit-max-device-pixel-ratio: 2), (min-width: 900px) and (max-resolution: 192dpi) {
+  .header {
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../images/Photo-2x.jpg) center center/cover no-repeat;
+  }
+}
 .header__logo {
   height: 7.6rem;
   width: 5.6rem;
@@ -286,7 +297,7 @@ body {
   color: #FFF;
   line-height: normal;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .header__title-box {
     margin: 9rem auto 0;
   }
@@ -317,12 +328,12 @@ body {
   padding-top: 8rem;
   padding-bottom: 5.4rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .fealings {
     padding-top: 5.4rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings {
     padding-bottom: 44rem;
   }
@@ -351,7 +362,7 @@ body {
   -moz-column-gap: 6.8rem;
        column-gap: 6.8rem;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings__box {
     flex-direction: column;
     row-gap: 5rem;
@@ -404,7 +415,7 @@ body {
   top: 20%;
   right: 0;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings__box__images img:nth-child(2) {
     top: 5rem;
   }
@@ -413,7 +424,7 @@ body {
   top: 40%;
   left: 5%;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings__box__images img:nth-child(3) {
     top: 14rem;
   }
@@ -430,7 +441,7 @@ body {
           clip-path: polygon(0 0, 100% 20%, 100% 98%, 0 80%);
   padding: 25rem 0;
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .fealings-cards {
     max-height: 60rem;
     -webkit-clip-path: polygon(0 0, 100% 15%, 100% 98%, 0 85%);
@@ -438,12 +449,12 @@ body {
     padding: 15rem 0;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .fealings-cards {
     max-height: 80rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings-cards {
     max-height: 120rem;
     -webkit-clip-path: polygon(0 0, 100% 5%, 100% 98%, 0 95%);
@@ -457,13 +468,13 @@ body {
   -moz-column-gap: 6rem;
        column-gap: 6rem;
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .fealings-cards .container {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .fealings-cards .container {
     flex-wrap: wrap;
     row-gap: 3rem;
@@ -479,17 +490,17 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease-in-out;
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .fealings-cards__card {
     width: calc((100% - 9rem) / 4);
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .fealings-cards__card {
     flex-basis: calc((100% - 3rem) / 2);
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .fealings-cards__card {
     flex-basis: 100%;
   }
@@ -518,7 +529,7 @@ body {
 .fealings-cards__card:hover {
   transform: translateY(-1rem) scale(1.05);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .fealings-cards__card:hover {
     transform: translateY(0rem) scale(1.05);
   }
@@ -553,13 +564,13 @@ body {
        column-gap: 6rem;
   padding-bottom: 8rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .tours__cards {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards {
     row-gap: 10rem;
     flex-wrap: wrap;
@@ -573,7 +584,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card {
     flex-basis: 100%;
     height: auto;
@@ -589,7 +600,7 @@ body {
   top: 0;
   left: 0;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card__side {
     height: auto;
     position: relative;
@@ -606,7 +617,7 @@ body {
   color: #FFF;
   letter-spacing: 0.2rem;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card__side_back {
     position: relative;
     -webkit-clip-path: polygon(0% 0, 100% 11%, 100% 100%, 0 100%);
@@ -629,13 +640,13 @@ body {
 .tours__cards__card__side_back .primary-btn {
   animation: none;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .tours__cards__card__side_back .primary-btn {
     letter-spacing: 0;
     padding: 1.5rem 2rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card__side_back .primary-btn {
     margin: 0 auto;
     padding: 1.5rem 4rem;
@@ -645,7 +656,7 @@ body {
 .tours__cards__card:hover .tours__cards__card__side_front {
   transform: rotateY(-180deg);
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card:hover .tours__cards__card__side_front {
     transform: none;
   }
@@ -653,7 +664,7 @@ body {
 .tours__cards__card:hover .tours__cards__card__side_back {
   transform: rotateY(0deg);
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card:hover .tours__cards__card__side_back {
     transform: none;
   }
@@ -664,13 +675,13 @@ body {
   margin-bottom: 6rem;
   background-color: #BA8554;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card .image {
     height: 50%;
     margin-bottom: 4rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card .image {
     height: 30rem;
   }
@@ -678,9 +689,10 @@ body {
 .tours__cards__card .image img {
   mix-blend-mode: hard-light;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card .image img {
     transform: translateY(-30%);
+    transform: scale(1.1);
   }
 }
 .tours__cards__card .title {
@@ -691,17 +703,17 @@ body {
   z-index: 1;
   width: 70%;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .tours__cards__card .title {
     top: 22%;
   }
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .tours__cards__card .title {
     width: 100%;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card .title {
     top: 35%;
   }
@@ -728,7 +740,7 @@ body {
   row-gap: 2rem;
   padding: 0 5rem 5rem;
 }
-@media (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   .tours__cards__card ul {
     padding: 0 2rem 10rem;
   }
@@ -740,7 +752,7 @@ body {
   letter-spacing: 0.2rem;
   text-decoration: underline;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .tours__cards__card ul li {
     font-size: 2rem;
   }
@@ -807,7 +819,7 @@ body {
           clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .response__box > * {
     padding: 4.5rem 10rem;
   }
@@ -822,7 +834,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .response__box__image {
     float: none;
     margin: 0 auto 2rem;
@@ -875,7 +887,7 @@ body {
   background: linear-gradient(90deg, rgb(195, 149, 106) 3.65%, rgb(161, 79, 3) 100%);
   padding: 10rem;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .reserve {
     padding: 6rem;
   }
@@ -884,7 +896,7 @@ body {
   background: linear-gradient(90deg, rgba(195, 149, 106, 0.3) 3.65%, rgba(161, 79, 3, 0.3) 100%), url(../images/form-bg.jpg) left center/130% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .reserve__box {
     background: linear-gradient(90deg, rgba(195, 149, 106, 0.3) 3.65%, rgba(161, 79, 3, 0.3) 100%), url(../images/form-bg.jpg) 51% top/260% no-repeat;
     height: 80rem;
@@ -898,7 +910,7 @@ body {
   height: 100%;
   width: 65%;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .reserve__form {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
             clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
@@ -929,7 +941,7 @@ body {
   row-gap: 2.1rem;
   max-width: 75%;
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .reserve__form .form {
     max-width: 100%;
   }
@@ -938,7 +950,7 @@ body {
   max-width: 28rem;
   animation: none;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .reserve__form .form button {
     letter-spacing: 0;
   }
@@ -966,7 +978,7 @@ body {
 .reserve__form .form__input-group input:not(:invalid) {
   border-bottom: 0.2rem solid #66D763;
 }
-@media (max-width: 1350px) {
+@media only screen and (max-width: 1350px) {
   .reserve__form .form__input-group input {
     max-width: 100%;
   }
@@ -993,7 +1005,7 @@ body {
        column-gap: 2.4rem;
   margin-bottom: 0.9rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .reserve__form .form__input-group_2 {
     flex-wrap: wrap;
     row-gap: 3rem;
@@ -1062,13 +1074,13 @@ body {
        column-gap: 5rem;
   justify-content: center;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer nav ul {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (max-width: 450px) {
   .footer nav ul {
     flex-direction: column;
     row-gap: 5rem;
