@@ -228,7 +228,11 @@ body {
   background-color: #FFF;
   min-width: 400px;
 }
-
+@media only screen and (max-width: 450px) {
+  body {
+    padding: 1rem;
+  }
+}
 .wrapper {
   background-color: #f7f7f7;
 }
@@ -244,6 +248,12 @@ body {
     padding-left: 6rem;
     padding-right: 6rem;
   }
+}
+@media only screen and (max-width: 450px){
+	.container {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 .container_2 {
   padding-left: 14rem;
@@ -890,6 +900,11 @@ body {
 @media only screen and (max-width: 1350px) {
   .reserve {
     padding: 6rem;
+  }
+}
+@media only screen and (max-width: 450px){
+	.reserve {
+    padding: 3rem;
   }
 }
 .reserve__box {
